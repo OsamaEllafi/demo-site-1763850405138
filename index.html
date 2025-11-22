@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon - Home</title>
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/home.css">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <a href="index.html" class="logo">Amazon</a>
+            <div class="search">
+                <form>
+                    <input type="search" placeholder="Search Amazon" aria-label="Search Amazon">
+                    <button type="submit">🔍</button>
+                </form>
+            </div>
+            <nav>
+                <a href="profile.html" class="nav-link">Account &amp; Lists</a>
+                <a href="#" class="nav-link">Returns &amp; Orders</a>
+                <a href="cart.html" class="nav-link">
+                    Cart
+                    <span class="cart-badge" aria-label="Shopping cart item count">0</span>
+                </a>
+            </nav>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+    <main class="container">
+        <section class="hero-carousel">
+            <div class="slides">
+                <div class="slide active">
+                    <img src="https://picsum.photos/1200/400?random=1" alt="Featured Deal 1">
+                </div>
+                <div class="slide">
+                    <img src="https://picsum.photos/1200/400?random=2" alt="Featured Deal 2">
+                </div>
+                <div class="slide">
+                    <img src="https://picsum.photos/1200/400?random=3" alt="Featured Deal 3">
+                </div>
+            </div>
+            <button class="carousel-btn prev" aria-label="Previous slide">‹</button>
+            <button class="carousel-btn next" aria-label="Next slide">›</button>
+            <div class="carousel-dots">
+                <span class="dot active" data-slide="0"></span>
+                <span class="dot" data-slide="1"></span>
+                <span class="dot" data-slide="2"></span>
+            </div>
+        </section>
+        <section class="daily-deals section">
+            <h2>Today&#39;s Deals</h2>
+            <div class="deals-grid">
+                <div class="product-card">
+                    <img src="https://picsum.photos/300/300?random=4" alt="Deal Product 1" class="product-img">
+                    <div class="card-info">
+                        <h3>Lightning Deal Product 1</h3>
+                        <div class="price">$29.99</div>
+                        <div class="timer">Time left: <span class="countdown">1h 30m</span></div>
+                        <button class="btn btn-small">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://picsum.photos/300/300?random=5" alt="Deal Product 2" class="product-img">
+                    <div class="card-info">
+                        <h3>Lightning Deal Product 2</h3>
+                        <div class="price">$39.99</div>
+                        <div class="timer">Time left: <span class="countdown">2h 15m</span></div>
+                        <button class="btn btn-small">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://picsum.photos/300/300?random=6" alt="Deal Product 3" class="product-img">
+                    <div class="card-info">
+                        <h3>Lightning Deal Product 3</h3>
+                        <div class="price">$19.99</div>
+                        <div class="timer">Time left: <span class="countdown">45m</span></div>
+                        <button class="btn btn-small">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://picsum.photos/300/300?random=7" alt="Deal Product 4" class="product-img">
+                    <div class="card-info">
+                        <h3>Lightning Deal Product 4</h3>
+                        <div class="price">$49.99</div>
+                        <div class="timer">Time left: <span class="countdown">3h 0m</span></div>
+                        <button class="btn btn-small">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="categories section">
+            <h2>Shop by Category</h2>
+            <div class="categories-grid">
+                <a href="#" class="category-card">
+                    <div class="cat-img" style="background-image: url(https://picsum.photos/200/200?random=8);"></div>
+                    <span>Electronics</span>
+                </a>
+                <a href="#" class="category-card">
+                    <div class="cat-img" style="background-image: url(https://picsum.photos/200/200?random=9);"></div>
+                    <span>Fashion</span>
+                </a>
+                <a href="#" class="category-card">
+                    <div class="cat-img" style="background-image: url(https://picsum.photos/200/200?random=10);"></div>
+                    <span>Home &amp; Kitchen</span>
+                </a>
+                <a href="#" class="category-card">
+                    <div class="cat-img" style="background-image: url(https://picsum.photos/200/200?random=11);"></div>
+                    <span>Books</span>
+                </a>
+                <a href="#" class="category-card">
+                    <div class="cat-img" style="background-image: url(https://picsum.photos/200/200?random=12);"></div>
+                    <span>Sports</span>
+                </a>
+                <a href="#" class="category-card">
+                    <div class="cat-img" style="background-image: url(https://picsum.photos/200/200?random=13);"></div>
+                    <span>Beauty</span>
+                </a>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-content container">
+            <div>
+                <h4>Get to Know Us</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Press</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Make Money With Us</h4>
+                <ul>
+                    <li><a href="#">Sell on Amazon</a></li>
+                    <li><a href="#">Sell apps</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Amazon Payment Products</h4>
+                <ul>
+                    <li><a href="#">Amazon Pay</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Let Us Help You</h4>
+                <ul>
+                    <li><a href="about.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom container">
+            <p>&copy; 2024 Amazon Mockup. All rights reserved.</p>
+        </div>
+    </footer>
+    <script defer src="assets/js/global.js"></script>
+    <script defer src="assets/js/home.js"></script>
+</body>
+</html>
