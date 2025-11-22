@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - Amazon</title>
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/cart.css">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <a href="index.html" class="logo">Amazon</a>
+            <div class="search">
+                <form>
+                    <input type="search" placeholder="Search Amazon" aria-label="Search Amazon">
+                    <button type="submit">🔍</button>
+                </form>
+            </div>
+            <nav>
+                <a href="profile.html" class="nav-link">Account &amp; Lists</a>
+                <a href="#" class="nav-link">Returns &amp; Orders</a>
+                <a href="cart.html" class="nav-link">
+                    Cart
+                    <span class="cart-badge" aria-label="Shopping cart item count">0</span>
+                </a>
+            </nav>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+    <main class="container">
+        <h1 class="page-title">Shopping Cart</h1>
+        <div id="cartEmpty" class="empty-cart" style="display: none;">
+            <p>Your shopping cart is empty.</p>
+            <a href="index.html" class="btn">Continue Shopping</a>
+        </div>
+        <div class="cart-content">
+            <div class="cart-items" id="cartItems">
+                <!-- Items will be populated by JS -->
+            </div>
+            <div class="order-summary">
+                <h2>Order Summary</h2>
+                <div class="summary-row">
+                    <span>Items:</span>
+                    <span id="itemsCount">0</span>
+                </div>
+                <div class="summary-row">
+                    <span>Subtotal:</span>
+                    <span id="subtotal">$0.00</span>
+                </div>
+                <div class="summary-row shipping">
+                    <span>Shipping:</span>
+                    <span>Free</span>
+                </div>
+                <hr>
+                <div class="summary-row total">
+                    <span>Order Total:</span>
+                    <span id="total">$0.00</span>
+                </div>
+                <button class="btn checkout-btn" id="checkoutBtn" style="width: 100%; margin-top: 20px;">Proceed to Checkout</button>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-content container">
+            <div>
+                <h4>Get to Know Us</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Let Us Help You</h4>
+                <ul>
+                    <li><a href="about.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom container">
+            <p>&copy; 2024 Amazon Mockup. All rights reserved.</p>
+        </div>
+    </footer>
+    <script defer src="assets/js/global.js"></script>
+    <script defer src="assets/js/cart.js"></script>
+</body>
+</html>
