@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail - Amazon</title>
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/product.css">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <a href="index.html" class="logo">Amazon</a>
+            <div class="search">
+                <form>
+                    <input type="search" placeholder="Search Amazon" aria-label="Search Amazon">
+                    <button type="submit">🔍</button>
+                </form>
+            </div>
+            <nav>
+                <a href="profile.html" class="nav-link">Account &amp; Lists</a>
+                <a href="#" class="nav-link">Returns &amp; Orders</a>
+                <a href="cart.html" class="nav-link">
+                    Cart
+                    <span class="cart-badge" aria-label="Shopping cart item count">0</span>
+                </a>
+            </nav>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+    <main class="container">
+        <nav class="breadcrumb">
+            <a href="index.html">Home</a> &gt; <a href="#">Electronics</a> &gt; Sample Product
+        </nav>
+        <div class="product-main">
+            <div class="gallery">
+                <div class="main-image-container">
+                    <img src="https://picsum.photos/500/500?random=20" alt="Sample Product" class="main-img" id="mainImg">
+                </div>
+                <div class="thumbs">
+                    <img src="https://picsum.photos/80/80?random=20" alt="Thumbnail 1" class="thumb" data-src="https://picsum.photos/500/500?random=20">
+                    <img src="https://picsum.photos/80/80?random=21" alt="Thumbnail 2" class="thumb" data-src="https://picsum.photos/500/500?random=21">
+                    <img src="https://picsum.photos/80/80?random=22" alt="Thumbnail 3" class="thumb" data-src="https://picsum.photos/500/500?random=22">
+                    <img src="https://picsum.photos/80/80?random=23" alt="Thumbnail 4" class="thumb" data-src="https://picsum.photos/500/500?random=23">
+                </div>
+            </div>
+            <div class="product-info">
+                <h1 class="product-title">Wireless Bluetooth Headphones</h1>
+                <div class="rating">
+                    <span class="stars">★★★★☆</span>
+                    <span class="rating-text">4.5 out of 5 stars</span>
+                    <span class="reviews">1,234 reviews</span>
+                </div>
+                <div class="price">$49.99</div>
+                <div class="availability">In Stock</div>
+                <p class="description">
+                    Premium wireless headphones with noise cancellation, long battery life, and superior sound quality. Perfect for music lovers and commuters.
+                </p>
+                <div class="quantity-selector">
+                    <label>Qty:</label>
+                    <div class="qty-controls">
+                        <button class="qty-btn" id="qtyMinus">−</button>
+                        <input type="number" id="quantity" value="1" min="1" max="10">
+                        <button class="qty-btn" id="qtyPlus">+</button>
+                    </div>
+                </div>
+                <button class="btn add-to-cart" id="addToCart">Add to Cart</button>
+                <button class="btn btn-secondary">Buy Now</button>
+            </div>
+        </div>
+        <section class="related-products section">
+            <h2>Customers also viewed</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <img src="https://picsum.photos/250/250?random=24" alt="Related 1" class="product-img">
+                    <div class="card-info">
+                        <h3>Related Product 1</h3>
+                        <div class="price">$39.99</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://picsum.photos/250/250?random=25" alt="Related 2" class="product-img">
+                    <div class="card-info">
+                        <h3>Related Product 2</h3>
+                        <div class="price">$59.99</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://picsum.photos/250/250?random=26" alt="Related 3" class="product-img">
+                    <div class="card-info">
+                        <h3>Related Product 3</h3>
+                        <div class="price">$29.99</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-content container">
+            <div>
+                <h4>Get to Know Us</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Amazon Payment Products</h4>
+                <ul>
+                    <li><a href="#">Amazon Pay</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Let Us Help You</h4>
+                <ul>
+                    <li><a href="about.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom container">
+            <p>&copy; 2024 Amazon Mockup. All rights reserved.</p>
+        </div>
+    </footer>
+    <script defer src="assets/js/global.js"></script>
+    <script defer src="assets/js/product.js"></script>
+</body>
+</html>
